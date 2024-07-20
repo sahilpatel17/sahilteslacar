@@ -1,0 +1,20 @@
+/* src/components/Cell.css */
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.cell.clicked {
+  background-color: red;
+}
+
+.cell.start {
+  background-color: green;
+}
+
+.cell.end {
+  background-color: yellow;
+}

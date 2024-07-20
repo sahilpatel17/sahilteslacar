@@ -1,0 +1,54 @@
+/* src/components/Grid.css */
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(50, 20px);
+  grid-template-rows: repeat(50, 20px);
+  position: relative;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.cell.clicked {
+  background-color: red;
+}
+
+.cell.start {
+  background-color: green;
+}
+
+.cell.end {
+  background-color: yellow;
+}
+
+.car {
+  width: 15px; /* Adjust the size of the car image */
+  height: auto;
+  position: absolute;
+}
+
+.path-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.message {
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+}
